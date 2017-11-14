@@ -45,8 +45,7 @@ public class AuthorizationServerConfig extends WebSecurityConfigurerAdapter {
             clients.inMemory()
                     .withClient("acme")
                     .secret("acmesecret")
-                    .authorizedGrantTypes("authorization_code", "refresh_token",
-                            "password").scopes("openid");
+                    .authorizedGrantTypes("authorization_code", "refresh_token", "password").scopes("openid");
         }
     }
 }
